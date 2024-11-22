@@ -3,6 +3,7 @@
 :root {
     --green: rgb(56, 128, 82);
     --dark-teal: rgb(45, 65, 70);
+    --lightblue: rgb(241, 248, 249);
 }
 
 * {
@@ -126,8 +127,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 45%;
+    width: 35%;
     margin-bottom: 10px;
+}
+
+#piechart-title-container h2 {
+    font-family: 'Arial Narrow';
+    font-size: 30px;
 }
 
 #piechart {
@@ -169,4 +175,106 @@ body {
 .amount {
     color: var(--dark-teal);
     margin-bottom: 5px;
+    font-family: 'Arial Narrow';
+    font-size: 40px;
+}
+
+/*** CLICKABLE BUTTONS SECTION ***/
+
+#clickable-buttons-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--lightblue);
+    padding: 80px;
+}
+
+#clickable-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 365px;
+    height: 365px;
+    border: 1px solid rgb(200, 219, 220);
+    border-top: 5px solid rgb(75, 155, 82);
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.button-box:hover {
+    border-color: var(--green);
+}
+
+.button-icon {
+    width: 130px;
+}
+
+.button-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Arial Narrow';
+    font-size: 30px;
+}
+
+.button-description {
+    font-family: Verdana;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+#more-calculators {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    margin: 50px 0;
+}
+
+#more-calculators a {
+    text-decoration: none;
+    color: black;
+    margin-left: 3px;
+}
+
+#statbank-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20px;
+    height: 120px;
+    border: 1px solid rgb(200, 219, 220);
+    border-top: 5px solid rgb(75, 155, 82);
+    background-color: white;
+}
+
+#statbank-container > div {
+    display: flex;
+    align-items: center;
+}
+
+#barchart{
+    width: 70px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+#statbank-title {
+    color: black;
+    text-decoration-color: var(--green);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+#statbank-title:hover {
+    color: white;
+    background-color: var(--green);
+    text-decoration: none;
 }
