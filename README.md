@@ -12,6 +12,6 @@ A mockup of the [Statistic Norway](https://www.ssb.no/en) home page.
   - Clickable buttons for "Name search," "Inflation calculator," and "Rent calculator" (do not need to go anywhere)
 
 ## Reference Website
-<img src="reference.png" width="500" alt="A screenshot of the Statistics Norway home page" />
+<img src="assets/reference.png" width="500" alt="A screenshot of the Statistics Norway home page" />
 
 ## Mockup Website
